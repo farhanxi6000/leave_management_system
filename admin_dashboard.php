@@ -12,7 +12,7 @@ if ($_SESSION['role'] !== 'Admin') {
     die("Access denied");
 }
 
-/* ---------- DASHBOARD METRICS ---------- */
+
 
 // Total employees
 $totalEmployees = mysqli_fetch_assoc(
@@ -60,7 +60,7 @@ $pendingLeaves = mysqli_fetch_assoc(
     z-index: -2;
 }
 
-/* Dark overlay for readability */
+
 .bg-overlay {
     position: fixed;
     inset: 0;
@@ -199,12 +199,12 @@ $pendingLeaves = mysqli_fetch_assoc(
     </div>
 </div>
 
-<!-- Bootstrap JS -->
+
 <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
 </script>
 
-<!-- Sidebar Toggle Script -->
+
 <script>
     function toggleSidebar() {
         document.getElementById("sidebar").classList.toggle("collapsed");
